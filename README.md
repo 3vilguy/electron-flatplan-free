@@ -16,8 +16,14 @@ $ git clone git@github.com:3vilguy/electron-flatplan-free.git
 $ npm install
 ```
 
-3. Start the app
+3. Start Webpack dev-server (that should start local dev server on localhost:8080, you should keep this process running):
 
 ```
 $ npm start
+```
+
+4. Start the electron app (won't show anything if local server is not running):
+
+```
+$ npm run electron-dev
 ```

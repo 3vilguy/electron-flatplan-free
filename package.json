@@ -2,14 +2,23 @@
   "name": "electron-flatplan-free",
   "version": "0.0.1",
   "scripts": {
-    "start": "electron ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "electron-dev": "ELECTRON_DISABLE_SECURITY_WARNINGS=true ELECTRON_START_URL=http://localhost:8080/ electron ."
   },
   "license": "MIT",
-  "dependencies": {
-    "electron": "4.1.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3vilguy/electron-flatplan-free.git"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.5",
+    "electron": "4.1.4",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.1",
+    "webpack-dev-server": "3.3.1"
   }
 }
